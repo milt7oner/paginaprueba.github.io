@@ -1,0 +1,149 @@
+/* Global */
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("/img/FondoHome2.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-x:hidden;
+}
+a {
+  font-family: 'Familjen Grotesk', sans-serif;
+  font-size: 22px;
+  color: #080808;
+  text-decoration: none;
+  display: grid;
+  justify-content: center;
+  font-weight: lighter;
+}
+li {
+  background-color: #E9F16D;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  
+}
+ul {
+  list-style: none;
+ 
+}
+.nav-main{
+  column-count: 2;
+  float: left;
+  padding: 0 40px;
+  position:relative;
+  top:750px;
+  left:1300px;
+  
+}
+.nav-main ul li {
+  width: 170px;
+  height: 40px;
+  
+}
+.nav-main ul li a:hover {
+  border-bottom: 2px solid rgb(43, 22, 226);
+}
+.img-personitas{
+  position: relative;
+  left: 600px;
+  top: 40px;
+  
+}
+.img-logoAguila{
+  position: relative;
+  left: 120px;
+}
+
+.Texto-Titulo h5{
+  color: #88be32;
+  font-family: 'Familjen Grotesk', sans-serif;
+  font-size: 80PX;
+  width: 900px;
+  position: relative;
+  left: 120px;
+ 
+  
+  
+}
+.Texto-Titulo h6{
+  color: white;
+  font-family: 'Familjen Grotesk', sans-serif;
+  font-size: 18PX;
+  font-weight: normal;
+  position: relative;
+  left: 780px;
+
+}
+.pie-pagina{
+  width: 100%;
+  background-color: #0a141d;
+}
+.pie-pagina .grupo-1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap:50px;
+  padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+  width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+  color: #efefef;
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+  color: aqua;
+}
+.pie-pagina .grupo-2{
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+.pie-pagina .grupo-2 small{
+  font-size: 15px;
+}
+@media screen and (max-width:800px){
+  .pie-pagina .grupo-1{
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap:30px;
+      padding: 35px 0px;
+  }
+}
+
+
+

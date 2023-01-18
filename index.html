@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebCCA</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;700&display=swap"
+      rel="/css/styles.css"
+    />
+    <script type="text/javascript" src="/js/OcultarHome.js"></script>
+    <script type="text/javascript" src="js/jquery-1-2.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("li a").on("click", function (event) {
+          //console.log("epa, entraste al evento del click, vamos bien");
+          //Cancela el evento del href, por defecto al pinchar en un link
+          // te envia a este, con esto evitamos que ejecute el link
+          event.preventDefault();
+          //Cargamos el contenido del enlace
+          $("#principal").load(this.href);
+        });
+      });
+    </script>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="menu-btn">
+      <i class="fas fa-bars fa-2x"></i>
+    </div>
+    <div class="container" id="nav">
+      <!-- Navigation -->
+      <nav class="nav-main">
+        <!-- Left Nav -->
+        <ul class="nav-menu">
+          <li>
+            <a href="/html/admisiones.html" onclick="ocultar()">Admisiones</a>
+          </li>
+          <li>
+            <a href="/html/anuncios.html">Anuncios</a>
+          </li>
+          <li>
+            <a href="#">Calendario</a>
+          </li>
+          <li>
+            <a href="#">Trabajos</a>
+          </li>
+          <li>
+            <a href="#">Contáctenos</a>
+          </li>
+          <li>
+            <a href="#">Pagos</a>
+          </li>
+          <li>
+            <a href="#">Alimentación</a>
+          </li>
+          <li>
+            <a href="#">Eagles store</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <main id="principal">
+      <div class="img-personitas">
+        <img src="/img/LogoPersonitas.png" alt="logoPersonitas" />
+      </div>
+      <div class="img-logoAguila">
+        <img src="/img/LogoAguila.png" alt="logoAguila" />
+      </div>
+      <div class="Texto-Titulo">
+        <h5>CAMPESTRE AMERICANO SCHOOL</h5>
+        <h6>DESDE 1990</h6>
+      </div>
+    </main>
+    <!--::::Pie de Pagina::::::-->
+    
+
+   
+  </body>
+</html>
